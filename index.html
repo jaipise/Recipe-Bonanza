@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Bonanza</title>
+
+    <link rel="icon" type="image" href="./images/favicon.ico" />
+    <!-- stylesheets -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+
+    <script src="https://developer.edamam.com/attribution/badge.js"></script>
+  </head>
+
+  <body>
+    <!-- nav bar -->
+    <nav-bar location="home"></nav-bar>
+
+    <section>
+      <div class="container initial">
+        <div
+          id="edamam-badge"
+          style="width: 200px; height: auto; margin: auto"
+          data-color="white"
+        ></div>
+        <form>
+          <!-- input field to enter the recipe's name -->
+          <input
+            type="text"
+            autocomplete="off"
+            id="search-bar"
+            placeholder="Search for a Recipe..."
+          />
+          <button id="search-btn" onclick="submitSearchForm()" type="submit">
+            <!-- a search icon -->
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+
+        <!-- where the search results will appear -->
+        <div class="show-result" id="below-search-bar"></div>
+      </div>
+    </section>
+
+    <!-- JavaScript files -->
+    <script src="./components/navBar.js"></script>
+
+    <script src="./js/libraries/bootstrap.bundle.min.js"></script>
+    <script src="./js/libraries/sweetalert.min.js"></script>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
