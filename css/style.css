@@ -1,0 +1,85 @@
+/* font1: Nunito semi-bold 600 */
+/* font2: PT Sans Regular 400 */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=PT+Sans&display=swap");
+/* font-family: "Nunito", sans-serif;
+font-family: "PT Sans", sans-serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit: */
+}
+html {
+  font-family: "PT Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: rgb(147, 147, 255);
+}
+.container {
+  width: 100%;
+  height: 90%;
+  max-width: 1200px;
+  /* setting the top and bottom margins to zero, and the left and right margins to auto */
+  margin: 0 auto;
+  padding: 20px;
+}
+form {
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: rgb(223, 223, 223);
+}
+form input {
+  width: 90%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  background-color: rgb(223, 223, 223);
+  display: inline-block;
+}
+.container.initial form {
+  max-width: 800px;
+}
+.container.initial form input {
+  padding: 30px;
+  font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+  .container.initial form {
+    max-width: 700px;
+  }
+  .container.initial form input {
+    padding: 10px;
+    font-size: 2rem;
+  }
+}
+
+/* adapted from 
+https://www.w3schools.com/howto/howto_css_search_button.asp */
+#search-btn {
+  width: 8%;
+  margin: 1px;
+  display: inline-block;
+  background: transparent;
+  color: black;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+}
