@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enter your own recipe!</title>
+
+    <link rel="icon" type="image" href="../images/favicon.ico" />
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav-bar location="html"></nav-bar>
+
+    <div class="container-initial bg-light">
+      <div class="container initial">
+        <h1 class="display-1 text-center p-5">Enter your Own Recipes</h1>
+        <h3>
+          See all the recipes that you have already entered
+          <a href="./enteredRecipes.html" class="pb-5">here</a>
+        </h3>
+        <form id="enterForm">
+          <div class="form-group pb-3">
+            <label for="recipeName">Recipe Name</label>
+            <input
+              type="text"
+              autocomplete="off"
+              class="form-control"
+              id="recipeName"
+              placeholder="eg: Salad"
+              required
+            />
+          </div>
+          <div class="form-group pb-3">
+            <label for="recipeIngredients">Recipe Ingredients</label>
+            <br />
+            <textarea
+              class="form-control"
+              name="ingredients"
+              id="recipeIngredients"
+              rows="10"
+              placeholder="It is recommended that you number the ingredients and include the desired amount. eg:&#10;1. Flour, 100g&#10;2. Butter, 1 tablespoon"
+            ></textarea>
+          </div>
+          <div class="form-group pb-3">
+            <label for="recipeInstructions">Recipe Instructions</label>
+            <br />
+            <textarea
+              class="form-control"
+              name="instructions"
+              id="recipeInstructions"
+              rows="10"
+              placeholder="It is recommended that you number the instructions. eg:&#10;1. Stir the mixture&#10;2. Combine the two mixtures"
+            ></textarea>
+          </div>
+          <button
+            onclick="submitEnteredForm()"
+            type="submit"
+            class="btn btn-outline-primary mb-4"
+          >
+            Save your Recipe
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="../js/enterRecipe.js"></script>
+    <script src="../components/navBar.js"></script>
+    <script src="../js/libraries/sweetalert.min.js"></script>
+    <script src="../js/libraries/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

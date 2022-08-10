@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Entered Recipes</title>
+    <link rel="icon" type="image" href="../images/favicon.ico" />
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  </head>
+
+  <body onload="showEnteredRecipes()">
+    <!-- NAV -->
+    <nav-bar location="html"></nav-bar>
+
+    <div class="container-initial bg-dark">
+      <h1 class="display-3 text-center text-light p-5">
+        Here are the recipes that you have entered!
+      </h1>
+    </div>
+    <h3 class="container-sm pt-4">
+      Enter more recipes <a href="./enterRecipe.html">here</a>
+    </h3>
+
+    <div id="result" class="container-initial bg-light"></div>
+    <script src="../js/enterRecipe.js"></script>
+    <script src="../js/libraries/bootstrap.bundle.min.js"></script>
+
+    <script src="../js/libraries/sweetalert.min.js"></script>
+    <script src="../components/navBar.js"></script>
+  </body>
+</html>
